@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Student Management</h1>
+        <form id="studentForm">
+            <label>First Name: <input type="text" id="firstName" required></label><br>
+            <label>Last Name: <input type="text" id="lastName" required></label><br>
+            <label>Course:
+                <select id="course">
+                    <option value="BTech">BTech</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MTech">MTech</option>
+                    <option value="MCA">MCA</option>
+                </select>
+            </label><br>
+            <label>Date of Birth: <input type="date" id="dob" required></label><br>
+            <button type="submit">Submit</button>
+        </form>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Course</th>
+                    <th>DOB</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
